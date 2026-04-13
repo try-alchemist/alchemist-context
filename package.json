@@ -1,0 +1,47 @@
+{
+  "name": "alchemist-context",
+  "version": "0.1.0",
+  "description": "Living Context MCP server for Alchemist — keeps Claude oriented across sessions",
+  "type": "module",
+  "bin": {
+    "alchemist-context": "./dist/bin/cli.js"
+  },
+  "main": "./dist/src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/try-alchemist/alchemist-context"
+  },
+  "homepage": "https://try-alchemist.com",
+  "keywords": [
+    "claude",
+    "mcp",
+    "context",
+    "ai",
+    "claude-code",
+    "living-context",
+    "memory"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/src/index.js",
+    "test": "node --test test-free-tier.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "chokidar": "^4.0.3",
+    "commander": "^13.1.0",
+    "glob": "^11.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist"
+  ]
+}
